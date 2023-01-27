@@ -22,32 +22,6 @@ public class Drop extends Drops {
 		}
 		frame.fillOval(x+index*r, y+indey*r, r, r); //dropを描画
 	}
-
-	
-	// 消えるか判定する
-	public int checkDrop(int[][] list) {
-		int combo = 0, count = 0;
-		
-		for (int i=0; i<list.length; i++) {
-			for (int j=0; j<list[i].length; j++) {
-				// 横の判定
-				for (int k=0; k<list[i].length; k++) {
-					if (list[i][k] == list[i][k+1]) {
-						count++;
-					} else {
-						if (count >= 3) {
-							combo++;
-							break;
-						}
-						count=0;
-					}
-				}
-				// 縦の判定
-				
-			}
-		}
-		return combo;
-	}
 }
 
 

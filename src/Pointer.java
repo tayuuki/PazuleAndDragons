@@ -28,7 +28,6 @@ public class Pointer implements KeyListener {
 	public void keyPressed(KeyEvent e) {
 		// TODO 自動生成されたメソッド・スタブ
 		if (flug) {
-			System.out.println(flug);
 			if (e.getKeyCode() == KeyEvent.VK_LEFT && index > 0) {
 				cx = index;
 				index--;
@@ -38,7 +37,7 @@ public class Pointer implements KeyListener {
 			} if (e.getKeyCode() == KeyEvent.VK_UP && indey > 0) {
 				cy = indey;
 				indey--;
-			} if (e.getKeyCode() == KeyEvent.VK_DOWN && indey < 5) {
+			} if (e.getKeyCode() == KeyEvent.VK_DOWN && indey < 4) {
 				cy = indey;
 				indey++;
 			}
