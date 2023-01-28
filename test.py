@@ -42,4 +42,3 @@ print("")
 for i in range(5):
 	print(tmpx[i])
 
-
